@@ -123,4 +123,6 @@ if ("ontouchstart" in window) {
 }
 
 // Initialize the arc
+console.log("Initializing game...");
+console.log("Copyright (c) 2019 Vasanth V <imvasanthv@gmail.com>")
 setArc();

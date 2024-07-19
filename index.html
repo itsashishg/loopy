@@ -7,16 +7,9 @@
 	<meta name="viewport"
 		content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<meta name="description" content="A game for time-pass." />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="apple-mobile-web-app-title" content="Loopy" />
 	<meta name="application-name" content="Loopy" />
 	<meta name="theme-color" content="#fbf9f6" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-	<link rel="icon" href="/images/favicon.svg" />
-	<link rel="manifest" href="manifest.json" />
-	<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#2c3d51" />
+	<link rel="icon" href="./images/loopy.png" />
 	<meta name="msapplication-TileColor" content="#fbf9f6" />
 	<meta name="theme-color" content="#fbf9f6" />
 	<title>Loopy - A simple game to waste your time</title>
@@ -27,23 +20,30 @@
 </head>
 
 <body>
-	<section class="header"> Loopy </section>
+	<section class="header">
+		<span class="header-img">
+			<img src="./images/loopy.png" alt="Loopy" height="40">
+		</span>
+		<span>
+			Loopy
+		</span>
+	</section>
 	<section id="canvas">
-		<div id="game" style="height: 80vh; display: flex">
-			<svg id="looptap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-				<rect id="bg" x="0" y="0" height="100" width="100" fill="none" />
-				<text x="50" y="50" dominant-baseline="middle" text-anchor="middle" class="score" id="score"></text>
-				<text x="50" y="32" text-anchor="middle" class="score" id="finalscore"></text>
-				<text x="50" y="70" text-anchor="middle" class="score" id="best"></text>
-				<g id="tip">
-					<text x="50" y="68" text-anchor="middle" class="tip">Press spacebar when</text>
-					<text x="50" y="74" text-anchor="middle" class="tip">the ball is on the colored area.</text>
-				</g>
-				<path id="arc" fill="none" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" />
-				<circle id="ball" cx="50" cy="10" r="4" fill="#2C3D51" />
-				<polygon id="play" points="45,45 55,50 45,55" fill="#2C3D51" stroke="#2C3D51" stroke-width="5"
-					stroke-linejoin="round" stroke-linecap="round" />
-			</svg>
+		<div id="game"></div>
+		<svg id="loopy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+			<rect id="bg" x="0" y="0" height="100" width="100" fill="none" />
+			<text x="50" y="50" dominant-baseline="middle" text-anchor="middle" class="score" id="score"></text>
+			<text x="50" y="32" text-anchor="middle" class="score" id="finalscore"></text>
+			<text x="50" y="70" text-anchor="middle" class="score" id="best"></text>
+			<g id="tip">
+				<text x="50" y="68" text-anchor="middle" class="tip">Tap on screen/Press spacebar when</text>
+				<text x="50" y="74" text-anchor="middle" class="tip">the ball is on the colored area.</text>
+			</g>
+			<path id="arc" fill="none" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" />
+			<circle id="ball" cx="50" cy="10" r="4" fill="#2C3D51" />
+			<polygon id="play" points="45,45 55,50 45,55" fill="#2C3D51" stroke="#2C3D51" stroke-width="5"
+				stroke-linejoin="round" stroke-linecap="round" />
+		</svg>
 		</div>
 	</section>
 </body>
